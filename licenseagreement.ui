@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LicenseAgreement</class>
+ <widget class="QWidget" name="LicenseAgreement">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);</string>
+  </property>
+  <widget class="QLabel" name="licensedescriptionLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);</string>
+   </property>
+   <property name="text">
+    <string>just before you have a play</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="licenseLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);</string>
+   </property>
+   <property name="text">
+    <string>license agreement</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="licenseAcceptNextButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>65</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/assets/resources/forward.png</normaloff>:/assets/resources/forward.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="gplacceptcheckBox">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>126</y>
+     <width>20</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+{
+    border: 3px solid #5A5A5A;
+    background: none;
+}
+;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="licensedescriptionLabel_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>130</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;I accept the &lt;a href=&quot;https://osmc.tv/about/corporate/eula&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#51BC9B;&quot;&gt;End User License Agreement&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>gplacceptcheckBox</tabstop>
+  <tabstop>licenseAcceptNextButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

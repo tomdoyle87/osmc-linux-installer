@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LangSelection</class>
+ <widget class="QWidget" name="LangSelection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);
+</string>
+  </property>
+  <widget class="QLabel" name="welcomeLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>welcome</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="languageSelectionLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>please select your language to begin</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="languageSelectionBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>120</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);
+selection-background-color: rgb(210, 210, 210);</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Please Select ---</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="deviceSelectionLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>what would you like to install OSMC on?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="deviceSelectionBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>190</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);
+selection-background-color: rgb(210, 210, 210);
+</string>
+   </property>
+   <property name="maxVisibleItems">
+    <number>10</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>--- Please Select ---</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="languagenextButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>65</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/assets/resources/forward.png</normaloff>:/assets/resources/forward.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>languageSelectionBox</tabstop>
+  <tabstop>deviceSelectionBox</tabstop>
+  <tabstop>languagenextButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

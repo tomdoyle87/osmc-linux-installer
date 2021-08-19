@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PreseedDevice</class>
+ <widget class="QWidget" name="PreseedDevice">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);
+</string>
+  </property>
+  <widget class="QPushButton" name="installoptionsnextButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>200</y>
+     <width>65</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="osmc/installer/host/qt_host_installer/assets.qrc">
+     <normaloff>:/assets/resources/forward.png</normaloff>:/assets/resources/forward.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="installoptionsdescriptionLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>where would you like to run OSMC from?</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="installoptionsLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>install options</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="radiobuttongroupBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>221</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);
+</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QRadioButton" name="nfsinstallradioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Souce Pro</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #17394A;
+background: rgb(, 240, 240, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>from an NFS share</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="usbinstallradioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Souce Pro</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #17394A;
+background: rgb(, 240, 240, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>from a USB stick</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="sdinstallradioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Souce Pro</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #17394A;
+background: rgb(, 240, 240, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>from an SD card</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="emmcinstallradioButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sans Souce Pro</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::WheelFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #17394A;
+background: rgb(, 240, 240, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>from internal storage</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>radiobuttongroupBox</zorder>
+  <zorder>installoptionsnextButton</zorder>
+  <zorder>installoptionsdescriptionLabel</zorder>
+  <zorder>installoptionsLabel</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>sdinstallradioButton</tabstop>
+  <tabstop>usbinstallradioButton</tabstop>
+  <tabstop>nfsinstallradioButton</tabstop>
+  <tabstop>emmcinstallradioButton</tabstop>
+  <tabstop>installoptionsnextButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="osmc/installer/host/qt_host_installer/assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

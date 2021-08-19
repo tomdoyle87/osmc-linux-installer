@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SuccessDialog</class>
+ <widget class="QWidget" name="SuccessDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: #17394A;
+background: rgb(240, 240, 240);</string>
+  </property>
+  <widget class="QLabel" name="successDescLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>621</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);</string>
+   </property>
+   <property name="text">
+    <string>you're ready for show time!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="successTitleLabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>621</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #17394A;
+background: rgb(240, 240, 240, 0);</string>
+   </property>
+   <property name="text">
+    <string>congratulations</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeInstallerButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>150</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Sans Pro</family>
+     <pointsize>24</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}
+</string>
+   </property>
+   <property name="text">
+    <string>quit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="twitterButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>110</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/assets/resources/twitter.png</normaloff>:/assets/resources/twitter.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="facebookButton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>110</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color:#17394A;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(210,210,210));
+border-radius: 11px;
+}
+QPushButton:focus {
+border: 1px solid #17394A;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(88,188,155));
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.1, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assets.qrc">
+     <normaloff>:/assets/resources/fb.png</normaloff>:/assets/resources/fb.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

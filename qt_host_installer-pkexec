@@ -1,0 +1,2 @@
+#!/bin/sh
+pkexec "/home/tom/qt_host_installer/qt_host_installer" "$@"

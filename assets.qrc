@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/assets">
+        <file>resources/logo.png</file>
+        <file>resources/SourceSansPro-Regular.ttf</file>
+        <file>icon.png</file>
+        <file>resources/spinner.gif</file>
+        <file>resources/styles.qss</file>
+        <file>w32-lib/usbit32/usbitcmd.exe</file>
+        <file>w32-lib/usbit32/bs.img</file>
+        <file>resources/backward.png</file>
+        <file>resources/forward.png</file>
+        <file>resources/icon_128x128.png</file>
+        <file>resources/fb.png</file>
+        <file>resources/twitter.png</file>
+    </qresource>
+</RCC>
