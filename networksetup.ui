@@ -139,14 +139,15 @@ background: rgb(240, 240, 240, 0);</string>
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>110</y>
+     <y>100</y>
      <width>191</width>
      <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">color: #17394A;
-background: rgb(240, 240, 240, 0);</string>
+background: rgb(240, 240, 240, 0);
+border: none</string>
    </property>
    <property name="title">
     <string/>

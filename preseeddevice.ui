@@ -150,6 +150,7 @@ background: rgb(240, 240, 240, 0);
    <property name="styleSheet">
     <string notr="true">color: #17394A;
 background: rgb(240, 240, 240, 0);
+border: none
 </string>
    </property>
    <property name="title">
