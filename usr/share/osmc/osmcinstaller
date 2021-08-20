@@ -1,2 +1,0 @@
-#!/bin/bash
-xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root
