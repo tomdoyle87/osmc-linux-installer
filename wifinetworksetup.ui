@@ -122,7 +122,7 @@ radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="assets.qrc">
+    <iconset resource="osmc/installer/host/qt_host_installer/assets.qrc">
      <normaloff>:/assets/resources/forward.png</normaloff>:/assets/resources/forward.png</iconset>
    </property>
    <property name="iconSize">
@@ -182,7 +182,7 @@ background: rgb(240, 240, 240, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: #17394A;
-background: rgb(240, 240, 240, 0);
+background: rgb(, 240, 240, 0);
 </string>
    </property>
   </widget>
@@ -203,11 +203,11 @@ background: rgb(240, 240, 240, 0);
    </property>
    <property name="styleSheet">
     <string notr="true">color: #17394A;
-background: rgb(240, 240, 240, 0);
+background: rgb(, 240, 240, 0);
 </string>
    </property>
    <property name="inputMethodHints">
-    <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText</set>
+    <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
@@ -303,7 +303,7 @@ background: rgb(240, 240, 240, 0);
   <tabstop>networkoptionsnextButton</tabstop>
  </tabstops>
  <resources>
-  <include location="assets.qrc"/>
+  <include location="osmc/installer/host/qt_host_installer/assets.qrc"/>
  </resources>
  <connections/>
 </ui>
