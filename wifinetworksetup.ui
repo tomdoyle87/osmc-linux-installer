@@ -122,7 +122,7 @@ radius: 1.35, stop: 0 rgb(240,240,240), stop: 1 rgb(180,180,180));
     <string/>
    </property>
    <property name="icon">
-    <iconset resource="osmc/installer/host/qt_host_installer/assets.qrc">
+    <iconset resource="assets.qrc">
      <normaloff>:/assets/resources/forward.png</normaloff>:/assets/resources/forward.png</iconset>
    </property>
    <property name="iconSize">
@@ -303,7 +303,7 @@ background: rgb(240, 240, 240, 0);
   <tabstop>networkoptionsnextButton</tabstop>
  </tabstops>
  <resources>
-  <include location="osmc/installer/host/qt_host_installer/assets.qrc"/>
+  <include location="assets.qrc"/>
  </resources>
  <connections/>
 </ui>
