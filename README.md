@@ -10,8 +10,4 @@ If for any reason the provided packages do not work for you or you have request 
  cd osmc-host-installer</BR>
  qmake</BR>
  make</BR>
- sudo make install
- 
- Uninstall:
- 
- sudo make Uninstall
+ xhost si:localuser:root && sudo ./qt_host_installer && xhost -si:localuser:root
