@@ -1,7 +1,7 @@
 # osmc-host-installer
  
 osmc-installer_128_amd64.deb - Should work Debian 10/11 and derivatives (Ubuntu, mint, etc)</BR>
-osmc-installer-128.x86_64.rpm - Should work on Redhat 8  and derivatives (Fedora, Centos, Rocky, etc) 7 support to be added. 
+osmc-installer-128.x86_64.rpm - Should work on Redhat 8  and derivatives (Fedora, Centos, Rocky, etc) 7 support to be added.  Should also support opensuse tumble & leap 15.2.
 
 If for any reason the provided packages do not work for you or you have request for additional distro support, please raise a github issue. Alternativly compile from source:
  
