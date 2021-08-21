@@ -843,25 +843,10 @@ moc_writeimageworker.o: moc_writeimageworker.cpp
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_writeimageworker.o moc_writeimageworker.cpp
 
 ####### Install
-prefix=/usr
 
-install: osmcinstaller
-	install -m 0755 osmcinstaller $(prefix)/bin
-	install -m 0644 osmcinstaller.desktop $(prefix)/share/applications
-	install -d 0755 osmc-installer $(prefix)/share/doc/
-	install -m 0644 changelog.gz $(prefix)/share/doc/osmc-installer
-	install -d $(prefix)/share/osmc
-	install -m 0755 osmcinstaller $(prefix)/share/osmc/
-	install -m 0755 qt_host_installer $(prefix)/share/osmc/
-	install -m 0644 icon.png $(prefix)/share/osmc/
-	install -m 0600 org.osmc.pkexec.run-osmcinstaller.policy $(prefix)/share/polkit-1/actions
-	
-uninstall:  osmcinstaller
-	rm $(prefix)/bin/osmcinstaller
-	rm $(prefix)/share/applications/osmcinstaller.desktop
-	rm -r $(prefix)/share/doc/osmc-installer
-	rm -r $(prefix)/share/osmc
-	rm $(prefix)/share/polkit-1/actions/org.osmc.pkexec.run-osmcinstaller.policy
+install:  FORCE
+
+uninstall:  FORCE
 
 FORCE:
 
