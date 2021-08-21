@@ -171,7 +171,7 @@ selection-background-color: rgb(210, 210, 210);
   <widget class="QCheckBox" name="useLocalBuildCheckbox">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>190</x>
      <y>170</y>
      <width>291</width>
      <height>17</height>
@@ -188,8 +188,11 @@ selection-background-color: rgb(210, 210, 210);
    </property>
    <property name="styleSheet">
     <string notr="true">color: #17394A;
-background: rgb(240, 240, 240, 0);
-</string>
+{
+    border: 3px solid #5A5A5A;
+    background: none;
+}
+;</string>
    </property>
    <property name="text">
     <string>use a local build on my computer</string>
