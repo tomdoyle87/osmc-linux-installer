@@ -4,5 +4,5 @@ if [ $Xaxis \> 1920 ];
 then
         xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY QT_SCALE_FACTOR=1 QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCREEN_SCALE_FACTORS=2 /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root
 else
-         xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root
+        xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root
 fi
