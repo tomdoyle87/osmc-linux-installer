@@ -1,5 +1,7 @@
 # osmc-host-installer
- 
+
+Based on: https://github.com/osmc/osmc/tree/master/installer/host
+
 osmc-installer_128_amd64.deb - Should work Debian 10/11 and derivatives (Ubuntu, mint, etc)</BR>
 osmc-installer-128.x86_64.rpm - Should work on Redhat 8  and derivatives (Fedora, Centos, Rocky, etc) 7 support to be added.  Should also support opensuse tumble & leap 15.2.
 
