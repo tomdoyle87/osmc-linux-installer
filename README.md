@@ -1,4 +1,4 @@
-# osmc-host-installer
+# osmc-linux-installer
 
 Based on: https://github.com/osmc/osmc/tree/master/installer/host
 
