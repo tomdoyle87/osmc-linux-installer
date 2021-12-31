@@ -1,0 +1,48 @@
+{
+    "buildinfo": [
+    {
+        "prerun": [
+            "curl -sL http://192.168.1.20/osmc-installer_128.1_1_APPIMAGE.deb -o ~/.cache/deb2appimage/debs/osmc-installer_128.1_1_amd64.deb"
+        ],
+        "name": "osmcinstaller",
+        "version": "linux",
+        "deps": "x11-xserver-utils,libqt5widgets5",
+        "repoarch": "amd64",
+        "distrorepo": "Ubuntu",
+        "repoversion": "bionic",
+        "binarypath": "/usr/bin/osmcinstaller",
+        "desktoppath": "/usr/share/applications/osmcinstaller.desktop",
+        "iconpath": "/usr/share/osmc/icon.png",
+        "usewrapper": "false",
+        "postrun": [
+            null
+        ]
+    }
+    ],
+    "apprunconf": [
+    {
+        "setpath": "true",
+        "setlibpath": "true",
+        "setpythonpath": "false",
+        "setpythonhome": "false",
+        "setpythondontwritebytecode": "false",
+        "setxdgdatadirs": "false",
+        "setperllib": "false",
+        "setgsettingsschemadir": "false",
+        "setqtpluginpath": "false",
+        "exec": "/usr/bin/osmcinstaller"
+    }
+    ],
+    "authors": [
+    {
+        "type": "Author",
+        "author": "OSMC",
+        "url": "https://osmc.tv"
+    },
+    {
+        "type": "AppImage Maintainer",
+        "author": "tomdoyle87",
+        "url": "https://github.com/tomdoyle87/osmc-linux-installer"
+    }
+    ]
+}
