@@ -3,7 +3,8 @@
 Based on: https://github.com/osmc/osmc/tree/master/installer/host
 
 osmc-installer_\*.deb - Should work Debian 10/11 and derivatives (Ubuntu, mint, etc)</BR>
-osmc-installer-\*.x86_64.rpm - Should work on Redhat 7/8 and derivatives (Fedora, Centos, Rocky, etc).  Should also support Opensuse Tumble & Leap.
+osmc-installer-\*.x86_64.rpm - Should work on Redhat 7/8 and derivatives (Fedora, Centos, Rocky, etc).  Should also support Opensuse Tumble & Leap.  
+APPIMAGE should work on all the distro's listed above, (please raise a github issue if you have any issues runnning it). Also please be advised the OSMC Installer is temporarily copied to the running directory of the APPIMAGE. 
 
 If for any reason the provided packages do not work for you or you have request for additional distro support, please raise a github issue. Alternativly compile from source:
  
