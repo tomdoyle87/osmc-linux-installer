@@ -9,6 +9,9 @@ else
 fi
 if [[ $OS == *"SUSE"* ]]; then
         CMD="pkexec env QT_X11_NO_MITSHM=1 DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /usr/share/osmc/qt_host_installer "$@"";
-        else CMD=$(xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root);
+else
+        xhost si:localuser:root
+        CMD=$(pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /usr/share/osmc/qt_host_installer "$@");
+        xhost -si:localuser:root
 fi
 $CMD
