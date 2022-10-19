@@ -1,8 +1,14 @@
 **Changes to the osmc-host-installer**
 
+**_v128.3**
+- Added AppImage installer
+- Added Copyright to package files 
+
+---
+
 **_v128.2**
 - Raspberry Pi Zero 2 W added as target device
-- Simplified version release numbering. 
+- Simplified version release numbering 
 
 ---
 
