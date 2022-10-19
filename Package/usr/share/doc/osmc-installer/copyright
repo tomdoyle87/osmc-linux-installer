@@ -1,0 +1,36 @@
+Files: *
+Copyright: 2008, Sam G Nazarko <email@samnazarko.co.uk> 
+Copyright: 2021, Tom Doyle 
+License: GPL-2
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    .
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    .
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+    .
+    On Debian systems, the full text of the GNU General Public
+    License version 2 can be found in the file
+    `/usr/share/common-licenses/GPL-2'.
+
+Files: Font Name 'Source'
+Copyright: 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/)
+License: OFL 1.1
+    The OFL allows the licensed fonts to be used, studied, modified and
+    redistributed freely as long as they are not sold by themselves. The
+    fonts, including any derivative works, can be bundled, embedded, 
+    redistributed and/or sold with any software provided that any reserved
+    names are not used by derivative works. The fonts and derivatives,
+    however, cannot be released under any other type of license. The
+    requirement for fonts to remain under this license does not apply
+    to any document created using the fonts or their derivatives.
