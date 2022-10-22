@@ -1,3 +1,3 @@
-OSMCInstaller compiled with qt5.15.6 static build, following flags:
+OSMCInstaller compiled with qt5.9.5 staic build, following flags:
 
--opensource -confirm-license -release --prefix=/home/$USER/qt-everywhere-src-5.15.6/install -optimized-qmake -no-qml-debug -no-sql-sqlite -no-sql-db2 -no-sql-ibase -no-sql-mysql -no-sql-oci -no-sql-odbc -no-sql-psql -no-sql-sqlite -no-sql-sqlite2 -no-sql-tds -nomake examples -reduce-exports -static -skip wayland
+-v -static -prefix $PWD -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype -qt-xcb -make libs -nomake tools -nomake examples -nomake tests -opensource -confirm-license -egl -opengl es2 -skip wayland
