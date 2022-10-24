@@ -1,5 +1,12 @@
 **Changes to the osmc-host-installer**
 
+**_v128.4**
+- Centos7 support added to Appimage
+- Fixed Alignment HiDpi Display 
+- Built with qt 5.9.7
+
+---
+
 **_v128.3**
 - Added AppImage installer
 - Added Copyright to package files 
