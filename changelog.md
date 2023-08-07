@@ -1,7 +1,13 @@
 **Changes to the osmc-host-installer**
 
+**_v128.6**
+- Vero V enabled network preseed
+---
+
 **_v128.5**
-- Added Vero V to device list 
+- Added Vero V to device list
+
+---
 
 **_v128.4**
 - Centos7 support added to Appimage
