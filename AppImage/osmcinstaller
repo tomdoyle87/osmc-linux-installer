@@ -4,7 +4,7 @@ Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
 if [ $Xaxis \> 1920 ];
 then
-        SCALE="QT_SCALE_FACTOR=1 QT_AUTO_SCREEN_SCALE_FACTOR=0 QT_SCREEN_SCALE_FACTORS=2"
+        SCALE="QT_SCALE_FACTOR=2"
 else
         SCALE=""
 fi
