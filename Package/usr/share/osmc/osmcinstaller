@@ -1,12 +1,6 @@
 #!/bin/bash
-Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
-if [ $Xaxis \> 1920 ];
-then
-        SCALE="QT_SCALE_FACTOR=2"
-else
-        SCALE=""
-fi
+SCALE="QT_AUTO_SCREEN_SCALE_FACTOR=1 QT_FONT_DPI=96"
 if [[ $OS == *"SUSE"* ]]; then
         CMD="pkexec env QT_X11_NO_MITSHM=1 DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /usr/share/osmc/qt_host_installer "$@"";
         else CMD=$(xhost si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /usr/share/osmc/qt_host_installer "$@" && xhost -si:localuser:root);

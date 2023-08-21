@@ -1,13 +1,7 @@
 #!/bin/bash
 cp /tmp/.mount_osmc*/usr/share/osmc/qt_host_installer /tmp/qt_host_installer
-Xaxis=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
-if [ $Xaxis \> 1920 ];
-then
-        SCALE="QT_SCALE_FACTOR=2"
-else
-        SCALE=""
-fi
+SCALE="QT_AUTO_SCREEN_SCALE_FACTOR=1 QT_FONT_DPI=96"
 if [[ $OS == *"SUSE"* ]]; then
         CMD="pkexec env QT_X11_NO_MITSHM=1 DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /tmp/qt_host_installer "$@"";
 else
