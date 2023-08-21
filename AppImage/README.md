@@ -45,7 +45,6 @@ OSMCInstaller compiled with qt5.9.7 staic build, on centos7 with recommded patch
 		-skip qttranslations \
 		-skip qtgamepad \
 		-skip qtwebchannel \
-		-skip qtandroidextras \
-                -openssl 
+		-openssl 
 
 ubuntu22.04 may require libfuse2 to be installed.
