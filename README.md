@@ -10,7 +10,7 @@ If for any reason the provided packages do not work for you or you have request 
 Depends: qt5-devel gcc gcc-c++ make zlib-devel git xhost*
 
 git clone https://github.com/tomdoyle87/osmc-host-installer.git</BR>
-cd osmc-host-installer</BR>
+cd osmc-linux-installer</BR>
 qmake</BR>
 make</BR>
 xhost si:localuser:root && sudo ./qt_host_installer && xhost -si:localuser:root
