@@ -1,5 +1,9 @@
 **Changes to the osmc-host-installer**
 
+**_v128.7**
+- Proper HiDPI Fix
+---
+
 **_v128.6**
 - Vero V enabled network preseed
 ---
