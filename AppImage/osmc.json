@@ -2,14 +2,14 @@
     "buildinfo": [
     {
         "prerun": [
-            "curl -sL http://localhost/osmc-installer_128.6_amd64-appimage.deb -o ~/.cache/deb2appimage/debs/osmc-installer_128.6_amd64.deb"
+            "curl -sL http://localhost/osmc-installer_129_amd64-appimage.deb -o ~/.cache/deb2appimage/debs/osmc-installer_129_amd64.deb"
         ],
         "name": "osmcinstaller",
         "version": "linux",
         "deps": "",
         "repoarch": "amd64",
         "distrorepo": "ubuntu",
-        "repoversion": "bionic",
+        "repoversion": "Focal Fossa",
         "binarypath": "/usr/share/osmc/qt_host_installer",
         "desktoppath": "/usr/share/applications/osmcinstaller.desktop",
         "iconpath": "/usr/share/osmc/icon.png",

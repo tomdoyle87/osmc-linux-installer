@@ -1,6 +1,10 @@
 #!/bin/bash
-cp /tmp/.mount_osmc*/usr/share/osmc/qt_host_installer /tmp/qt_host_installer
 OS=$(awk -F= '/^NAME/{print $2}' /etc/os-release)
+if [[ $OS == *"SUSE"* ]]; then
+	cp /tmp/.mount_osmc*/usr/share/osmc/suse_qt_host_installer /tmp/qt_host_installer
+else
+	cp /tmp/.mount_osmc*/usr/share/osmc/qt_host_installer /tmp/qt_host_installer
+fi
 SCALE="QT_AUTO_SCREEN_SCALE_FACTOR=1 QT_FONT_DPI=96"
 if [[ $OS == *"SUSE"* ]]; then
         CMD="pkexec env QT_X11_NO_MITSHM=1 DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY $SCALE /tmp/qt_host_installer "$@"";

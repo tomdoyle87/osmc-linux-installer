@@ -1,5 +1,9 @@
 **Changes to the osmc-host-installer**
 
+**_v129**
+-  Development Environment changed to Rocky Linux 8, Static Image built with qt 5.14.2; shared uses 5.15.3. Improved UI on HiDPI Displays. 
+---
+
 **_v128.7**
 - Proper HiDPI Fix
 ---

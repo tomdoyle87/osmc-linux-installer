@@ -1,10 +1,9 @@
-OSMCInstaller compiled with qt5.9.7 staic build, on centos7 with recommded patches from qt5-qtbase-5.9.7-4.el7.src with the following flags:
+OSMCInstaller compiled with qt5.14.2 static build, on RockyLinux 8 with backported security patches. With the following flags:
 
-        -v \
 	        -verbose \
 		-confirm-license \
 		-opensource \
-		-prefix ../install \
+		-prefix "/opt/Qt$QT_VERSION" \
 		-no-qml-debug \
 		-no-sql-sqlite \
 		-no-sql-db2 \
@@ -27,8 +26,10 @@ OSMCInstaller compiled with qt5.9.7 staic build, on centos7 with recommded patch
 		-qt-libpng \
 		-qt-libjpeg \
 		-qt-freetype \
+                -qt-harfbuzz \
 		-make libs \
-		-optimized-qmake \
+		-optimize-size \
+		-strip
 		-no-opengl \
 		-skip qtactiveqt \
 		-skip qtlocation \
@@ -47,4 +48,4 @@ OSMCInstaller compiled with qt5.9.7 staic build, on centos7 with recommded patch
 		-skip qtwebchannel \
 		-openssl-runtime 
 
-ubuntu22.04 may require libfuse2 to be installed.
+Ubuntu may require libfuse2 to be installed.
