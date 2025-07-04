@@ -26,7 +26,7 @@ OSMCInstaller compiled with qt5.14.2 static build, on RockyLinux 8 with backport
 		-qt-libpng \
 		-qt-libjpeg \
 		-qt-freetype \
-                -qt-harfbuzz \
+        	-qt-harfbuzz \
 		-make libs \
 		-optimize-size \
 		-strip
